@@ -7,6 +7,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { PromedioComponent } from './pages/promedio/promedio.component';
 import { ListaUnoComponent } from './pages/lista-uno/lista-uno.component';
 import { ListaDosComponent } from './pages/lista-dos/lista-dos.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +15,12 @@ import { ListaDosComponent } from './pages/lista-dos/lista-dos.component';
     NavbarComponent,
     PromedioComponent,
     ListaUnoComponent,
-    ListaDosComponent
+    ListaDosComponent  
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
