@@ -1,1 +1,25 @@
-<p>promedio works!</p>
+<div class="card">
+  <div class="card-header">
+    Ingreso de calificaciones
+  </div>
+  <div class="card-body">
+    <div class="form-group">
+      <label for="calificacion1">Calificación 1:</label>
+      <input type="number" [(ngModel)]="calificacion1" class="form-control" id="calificacion1">
+    </div>
+    <div class="form-group">
+      <label for="calificacion2">Calificación 2:</label>
+      <input type="number" [(ngModel)]="calificacion2" class="form-control" id="calificacion2">
+    </div>
+    <div class="form-group">
+      <label for="calificacion3">Calificación 3:</label>
+      <input type="number" [(ngModel)]="calificacion3" class="form-control" id="calificacion3">
+    </div>
+    <div class="form-group mb-3">
+      <button (click)="calcularPromedio()" class="btn btn-primary">Calcular promedio</button>
+    </div>
+    <div class="alert alert-primary" role="alert">
+      {{ resultado }}
+    </div>
+  </div>
+</div>
