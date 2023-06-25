@@ -7,7 +7,7 @@ import { ListaDosComponent } from './pages/lista-dos/lista-dos.component';
 const routes: Routes = [
   { path: 'promedio', component: PromedioComponent },
   { path: 'usuarios', component: ListaUnoComponent },
-  { path: 'noticias', component: ListaDosComponent },
+  { path: 'horarios', component: ListaDosComponent },
   { path: '**', redirectTo: 'promedio' }
 ];
 

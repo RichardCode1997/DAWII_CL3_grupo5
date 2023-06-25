@@ -8,6 +8,7 @@ import { PromedioComponent } from './pages/promedio/promedio.component';
 import { ListaUnoComponent } from './pages/lista-uno/lista-uno.component';
 import { ListaDosComponent } from './pages/lista-dos/lista-dos.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,11 +16,12 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     PromedioComponent,
     ListaUnoComponent,
-    ListaDosComponent  
+    ListaDosComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule
   ],
   providers: [],

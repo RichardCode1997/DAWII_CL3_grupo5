@@ -1,0 +1,9 @@
+.main-column{
+    display: flex;
+    flex-direction: row;
+}
+.text-result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
