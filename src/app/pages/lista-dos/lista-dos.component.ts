@@ -20,10 +20,8 @@ export class ListaDosComponent implements OnInit {
 
 
   listarHorarios() {
-    this.horarios = this.allService.listarHorarios();
-
-    // this.allService.listarHorarios().subscribe((resp) => {
-    //   this.usuarios = resp;
-    // });
+    this.allService.listarHorarios().subscribe((resp) => {
+      this.horarios = resp;
+    });
   }
 }

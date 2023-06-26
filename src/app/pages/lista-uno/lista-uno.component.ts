@@ -20,11 +20,8 @@ export class ListaUnoComponent implements OnInit {
 
 
   listarUsuarios() {
-    this.usuarios = this.allService.listarUsuarios();
-    console.log(this.usuarios);
-
-    // this.allService.listarUsuarios().subscribe((resp) => {
-    //   this.usuarios = resp;
-    // });
+    this.allService.listarUsuarios().subscribe((resp) => {
+      this.usuarios = resp;
+    });
   }
 }
